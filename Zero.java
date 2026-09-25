@@ -1,0 +1,19 @@
+import java.util.*;
+class Zero {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the size of the array : ");
+        int arr[] = new int[sc.nextInt()];
+        for(int i=0;i<arr.length;i++){
+            System.out.print("enter the elements : ");
+            arr[i] = sc.nextInt();
+        }  
+        for(int i =0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==0){
+                    System.out.println(arr[i] + "," + arr[j]);
+                }
+            }
+        }
+    }  
+}
